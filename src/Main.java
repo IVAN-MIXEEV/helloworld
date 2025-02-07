@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,6 +30,7 @@ public class Main {
         var totalEmployee1 = totalEmployee + moreEmployee;
         var totalHours = totalEmployee1 * 8;
         System.out.println("Если в компании работает " + totalEmployee1 + " человека,то всего " + totalHours + " часа работы может быть поделено между сотрудниками.");
+
         int numberOne = 6;
         byte numberTwo = 66;
         short numberThree = 666;
@@ -41,6 +43,7 @@ public class Main {
         System.out.println("Значение переменной numberFour с типом long равно 6666");
         System.out.println("Значение переменной numberFive с типом float равно 6.6666");
         System.out.println("Значение переменной numberSix с типом double равно 6.66666");
+
         float a = (float) 27.12;
         long b = 987678965549L;
         float c = (float) 2.786;
@@ -56,6 +59,7 @@ public class Main {
         byte totalStudents = (byte) (LP + AS + EA);
         byte sheetsForEach = (byte) (paperOne / totalStudents);
         System.out.println("На каждого ученика рассчитано " + sheetsForEach + " листов бумаги.");
+
         short twentyMinutes = 8 * 20;
         short oneDay = 8 * 1440;
         int threeDays = 8 * 4320;
@@ -65,10 +69,27 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + threeDays + " штук бутылок.");
         System.out.println("За месяц машина произвела " + oneMonth + " штук бутылок.");
 
+        int totalCansOfPaint=120;
+        int whitePaintOneClass=2;
+        int brownPaintOneClass=4;
+        int totalPaintOneClass=whitePaintOneClass+brownPaintOneClass;
+        int totalClasses=totalCansOfPaint/totalPaintOneClass;
+        int totalWhitePoint=whitePaintOneClass*totalClasses;
+        int totalBrownPoint=brownPaintOneClass*totalClasses;
+        System.out.println("В школе, где "+totalClasses+" классов, нужно "+totalWhitePoint+" банок белой краски и "+totalBrownPoint+" банок коричневой краски");
+
+        int banana=5*80;
+        int milk=105*2;
+        int iceCream=2*100;
+        int eggs=4*70;
+        int breakfast=banana+milk+iceCream+eggs;
+        float breakfastKG= (float)breakfast/1000;
+        System.out.println(+breakfast+ "грамм");
+        System.out.println(+breakfastKG+" килограмм");
+
         int masha = 74536;
         int denis = 92059;
         int kristina = 83853;
-
         System.out.println("Маша теперь получает " + masha + " рублей в месяц.");
         System.out.println("Денис теперь получает " + denis + " рублей в месяц. ");
         System.out.println("Кристина теперь получает " + kristina + " рублей в месяц. ");
@@ -84,6 +105,7 @@ public class Main {
         System.out.println("Маша теперь получает "+mashaYearNew+" рублей в год.Годовой доход вырос на "+defferenceMashaYear+" рублей. ");
         System.out.println("Денис теперь получает "+denisYearNew+" рублей в год.Годовой доход вырос на "+defferenceDenisYear+" рублей. ");
         System.out.println("Кристина теперь получает "+kristinaYearNew+" рублей в год.Годовой доход вырос на "+defferenceKristinaYear+" рублей. ");
+
 
 
     }
