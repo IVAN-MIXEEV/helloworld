@@ -85,5 +85,6 @@ public class Main {
         System.out.println("Денис теперь получает "+denisYearNew+" рублей в год.Годовой доход вырос на "+defferenceDenisYear+" рублей. ");
         System.out.println("Кристина теперь получает "+kristinaYearNew+" рублей в год.Годовой доход вырос на "+defferenceKristinaYear+" рублей. ");
 
+
     }
 }
